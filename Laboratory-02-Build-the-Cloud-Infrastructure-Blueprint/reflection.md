@@ -2,7 +2,7 @@
 
 ## 1. Which cloud infrastructure component do you think is the most important? Why?
 I think compute is the most important component. It's the resource that
-actually does the work — running applications, processing requests, and
+actually does the work running applications, processing requests, and
 executing code. Storage and networking are essential too, but they only
 support compute: storage holds the data compute needs, and networking lets
 compute be reached. Without compute, none of the other components have
@@ -20,7 +20,7 @@ for engineers to configure, monitor, and automate infrastructure at scale.
 Documentation prevents costly mistakes and miscommunication. Before spending
 time or money provisioning real servers, a written infrastructure report
 lets engineers, teammates, or clients confirm that what's being built
-actually matches what's needed. It also creates accountability — if
+actually matches what's needed. It also creates accountability if
 something breaks later, the documentation shows what was planned and why
 certain decisions were made.
 
