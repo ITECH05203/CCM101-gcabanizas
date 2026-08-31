@@ -5,12 +5,12 @@
 needed to run applications, execute code, and handle workloads.
 
 **Why it matters in cloud computing:** Compute is the "engine" of any cloud
-service — without it, no application, website, or service can actually run.
+service without it, no application, website, or service can actually run.
 Cloud providers let you scale compute up or down on demand instead of buying
 physical servers.
 
 **In this KillerCoda environment:** The virtual machine running Ubuntu is
-itself a compute resource — its CPU and RAM (checked using `lscpu` and
+itself a compute resource its CPU and RAM (checked using `lscpu` and
 `free -h`) are what allow me to run commands, install packages, and host
 processes.
 
