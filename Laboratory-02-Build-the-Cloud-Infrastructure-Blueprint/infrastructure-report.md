@@ -1,28 +1,58 @@
 # Infrastructure Report
 
 ## Operating System
-[paste output of: cat /etc/os-release  OR  lsb_release -a]
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
 
 ## Kernel Version
-[paste output of: uname -r]
+6.8.0-138-generic
 
 ## CPU Model
-[paste output of: lscpu | grep "Model name"]
+Architecture: x86_64
+CPU op-mode(s): 32-bit, 64-bit
+Byte Order: Little Endian
+CPU(s): 1
+Vendor ID: GenuineIntel
+Model name: Intel Xeon E312xx (Sandy Bridge, IBRS update)
+Thread(s) per core: 1
+Core(s) per socket: 1
+Socket(s): 1
+Virtualization vendor: KVM
+Virtualization type: full
 
 ## Number of CPU Cores
-[paste output of: nproc  OR  lscpu | grep "^CPU(s):"]
+1
 
 ## Total RAM
-[paste output of: free -h]
+Mem: 1.9Gi 413Mi 869Mi 1.1Mi 787Mi 1.5Gi
+
 
 ## Disk Capacity
-[paste output of: df -h]
+Filesystem Size Used Avail Use% Mounted on
+tmpfs 191M 996K 190M 1% /run
+/dev/vda1 19G 5.4G 13G 30% /
+tmpfs 952M 84K 952M 1% /dev/shm
+tmpfs 5.0M 0 5.0M 0% /run/lock
+/dev/vda16 881M 117M 703M 15% /boot
+/dev/vda15 105M 6.2M 99M 6% /boot/efi
 
 ## Mounted File Systems
-[paste output of: mount | grep "^/dev"  OR  df -hT]
+Filesystem Type Size Used Avail Use% Mounted on
+tmpfs tmpfs 191M 996K 190M 1% /run
+/dev/vda1 ext4 19G 5.4G 13G 30% /
+tmpfs tmpfs 952M 84K 952M 1% /dev/shm
+tmpfs tmpfs 5.0M 0 5.0M 0% /run/lock
+/dev/vda16 ext4 881M 117M 703M 15% /boot
+/dev/vda15 vfat 105M 6.2M 99M 6% /boot/efi
 
 ## Hostname
-[paste output of: hostname]
+ubuntu
 
 ## IP Address
-[paste output of: ip a  OR  hostname -I]
+172.30.1.2
+172.17.0.1
