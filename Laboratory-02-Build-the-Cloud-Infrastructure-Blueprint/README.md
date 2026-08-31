@@ -1,4 +1,4 @@
-# Laboratory Activity 2 – Mission 2: Build the Cloud Infrastructure Blueprint
+# Mission 2: Build the Cloud Infrastructure Blueprint
 
 ## Mission Overview
 This activity simulates the planning phase of a cloud deployment. Using a
