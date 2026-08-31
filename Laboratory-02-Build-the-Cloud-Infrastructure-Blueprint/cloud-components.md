@@ -25,7 +25,7 @@ save and retrieve data. In the cloud, storage can be scaled independently
 from compute, and can be made highly durable through replication.
 
 **In this KillerCoda environment:** The disk space checked with `df -h`
-represents the storage resource — the root filesystem (`/`) where files,
+represents the storage resource the root filesystem (`/`) where files,
 directories, and my portfolio structure (Documents, Notes, Reports,
 Screenshots) are stored.
 
@@ -36,7 +36,7 @@ Screenshots) are stored.
 internet, allowing communication between servers, users, and services.
 
 **Why it matters in cloud computing:** Cloud services need networking to be
-reachable — whether that's a web server responding to users, or one server
+reachable whether that's a web server responding to users, or one server
 talking to a database on another machine.
 
 **In this KillerCoda environment:** The container has its own hostname and
