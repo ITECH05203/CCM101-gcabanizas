@@ -22,12 +22,12 @@ the client's IT team can replicate it.
 | `docker --version` | Verify Docker is installed and check its version |
 | `docker info` | Check the current status of the Docker environment |
 | `docker pull nginx` | Download the official Nginx image from Docker Hub |
-| `docker run -d -p 8080:80 --name my-nginx nginx` | Run Nginx in detached mode, mapping host port 8080 to container port 80 |
+| `docker run -d -p 8080:80 nginx` | Run Nginx in detached mode, mapping host port 8080 to container port 80 |
 | `curl http://localhost:8080` | Verify the web server is responding |
 | `docker ps` | List currently running containers |
-| `docker stop my-nginx` | Stop the running container |
+| `docker stop 4a69be532851` | Stop the running container |
 | `docker ps -a` | Verify the container is stopped (shows all containers) |
-| `docker rm my-nginx` | Remove the container completely |
+| `docker rm 4a69be532851` | Remove the container completely |
 
 ## Skills Learned
 Explaining the architectural differences between VMs and containers;
