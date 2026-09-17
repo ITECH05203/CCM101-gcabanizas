@@ -9,14 +9,7 @@
 
 ## Summary for the Client
 
-Moving your web applications from traditional VMs to containers would
-directly solve the two problems you raised. Because containers share the
-host operating system instead of each running their own Guest OS, they start
-in seconds rather than minutes and use a fraction of the RAM, letting you
-run far more application instances on the same hardware. Containers are also
-portable the same image runs identically on a developer's laptop, a test
-server, or a production cloud environment, which removes "it works on my
-machine" problems during deployment. VMs still make sense when you need
-strong hardware-level isolation or must run a completely different operating
-system, but for standard web applications containers are faster, cheaper,
-and easier to scale.
+## Summary for the Client
+
+Containers can help address the problems of slow startup and high resource usage because they share the host operating system instead of running a complete Guest OS for every application. They can start much faster and require less RAM and storage, which allows more applications to run on the same hardware. Containers are also portable because the same image can be used across different environments, such as development, testing, and production. Virtual Machines are still useful when stronger isolation or a different operating system is needed.
+
