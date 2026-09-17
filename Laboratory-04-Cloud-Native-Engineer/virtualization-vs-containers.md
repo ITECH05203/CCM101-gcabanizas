@@ -14,7 +14,7 @@ directly solve the two problems you raised. Because containers share the
 host operating system instead of each running their own Guest OS, they start
 in seconds rather than minutes and use a fraction of the RAM, letting you
 run far more application instances on the same hardware. Containers are also
-portable — the same image runs identically on a developer's laptop, a test
+portable the same image runs identically on a developer's laptop, a test
 server, or a production cloud environment, which removes "it works on my
 machine" problems during deployment. VMs still make sense when you need
 strong hardware-level isolation or must run a completely different operating
