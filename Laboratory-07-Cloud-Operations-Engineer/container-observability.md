@@ -12,5 +12,5 @@ failed instead of tracing the problem to its cause.
 
 ## Container Metrics (docker stats)
 - **Container:** client-website
-- **CPU %:** [fill in]
-- **Memory Usage:** [fill in]
+- **CPU %:** 0.00%
+- **Memory Usage:** 2.734MiB
