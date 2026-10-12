@@ -2,7 +2,7 @@
 
 ## HTTP 404 Log Entry
 ```
-[paste the single 404 line from docker logs here]
+172.17.0.1 - - [12/Oct/2026:03:15:15 +0000] "GET /hidden-admin-page HTTP/1.1" 404 153 "-" "curl/8.5.0" "-"
 ```
 
 Application logs are vital for troubleshooting because they record exactly
