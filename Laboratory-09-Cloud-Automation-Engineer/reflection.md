@@ -1,32 +1,32 @@
 # Reflection
 
-## 1. Why is automation critical when managing hundreds of cloud servers?
-Managing hundreds of servers by typing commands one at a time is too slow and
-easy to get wrong. Automation lets a single script do the same task
-identically on every machine, saves enormous amounts of time, and removes
-human errors like forgetting a backup. It also makes work repeatable, so the
-result is consistent no matter who runs it.
+## 1. Why automation is critical for hundreds of cloud servers
+When there are hundreds of servers, doing the same task by hand on each one
+takes too long and mistakes are easy to make. Automation lets one script do
+the job the same way every time, so nothing gets forgotten, like the missed
+backups in this lab. It also frees engineers to work on bigger problems.
 
-## 2. What are the potential dangers of automation?
-Automation multiplies mistakes just as efficiently as it multiplies
-successes. A destructive typo in a script scheduled on 1,000 servers, such as
-deleting the wrong directory, would damage every one of them at once, possibly
-overnight with nobody watching. That is why scripts should be tested on a
-single machine first, reviewed, and run only with good backups in place.
+## 2. The dangers of automation
+Automation can spread a mistake just as fast as it spreads a fix. If a script
+scheduled on 1,000 servers had a destructive typo, like deleting the wrong
+folder, it could damage every server at once, maybe at night when nobody is
+watching. That's why scripts should be tested on one machine first and
+backups should always exist.
 
-## 3. How did writing a Bash script differ from creating a Docker Compose YAML file (Mission 6)?
-A Bash script is a list of commands executed step by step, so it describes
-how to do a task. A Docker Compose YAML file is declarative: it describes the
-desired state of the services and lets Docker work out how to create it. Bash
-felt like giving instructions, while YAML felt like filling in a specification.
+## 3. Bash script vs. Docker Compose YAML
+A Bash script is a list of steps that the computer follows in order, so I tell
+it how to do the job. A Docker Compose YAML file describes what I want the
+final setup to look like, and Docker figures out the steps. Bash felt like
+writing instructions, while YAML felt like filling out a form.
 
-## 4. Review your entire GitHub repository from Laboratory 1 to Laboratory 9. How has your understanding of Cloud Computing transformed over the course of this semester?
-At the start, the cloud felt like an abstract idea. Moving from Linux basics
-to infrastructure, containers, monitoring, and automation showed me that the
-cloud is layers of servers, networking, and software that engineers manage and
-document. [Add one or two sentences about your own experience across the labs.]
+## 4. How my understanding of Cloud Computing changed
+At the start of the semester, the cloud just sounded like a buzzword to me.
+After going from Linux basics to infrastructure, containers, monitoring,
+security, and automation, I now see it as many layers of servers, networks,
+and software that people have to set up, protect, and document carefully.
+Looking through my repository, I can see I went from typing single commands to
+building things that run on their own.
 
-## 5. Which role did you enjoy the most and why?
-[Choose your role.] I enjoyed the [role] work the most because [your honest
-reason, such as which tasks you liked doing hands-on and what you found
-interesting or satisfying about them].
+## 5. The role I enjoyed the most
+The role I enjoyed the most was [your role] because [your reason]. For me, the
+best part was [the task you liked doing most].
