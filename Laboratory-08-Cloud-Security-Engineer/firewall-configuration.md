@@ -17,6 +17,5 @@ sudo ufw allow 8080/tcp
 ```
 
 ## What If SSH Was Not Allowed First?
-If `sudo ufw enable` were run before `sudo ufw allow ssh`, the Default Deny
-policy would block port 22 and lock the administrator out of the server's
-remote access.
+If I ran `sudo ufw enable` before `sudo ufw allow ssh`, the default deny rule
+would block port 22 and I would be locked out of my own server.
