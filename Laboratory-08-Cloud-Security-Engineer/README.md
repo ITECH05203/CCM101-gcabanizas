@@ -1,36 +1,33 @@
-# Mission 8: The Cloud Security Engineer
+# Laboratory Activity 8 – Mission 8: The Cloud Security Engineer
 
 ## Mission Overview
-This activity secures a newly deployed Ubuntu server that was left exposed to
-the public internet. Acting as a Cloud Security Engineer, I deployed an Nginx
-web application, then locked the server down with the Uncomplicated Firewall
-(UFW): allowing SSH first, enforcing a Default Deny policy for incoming
-traffic, and opening only port 8080 for the web application.
+In this lab, I secured a new Ubuntu server that was left exposed to the
+internet. I deployed an Nginx web app in a container, then used UFW to allow
+SSH, block all other incoming traffic by default, and open only port 8080 for
+the web app.
 
 ## Objectives
-- Understand the concept of the Attack Surface and the Principle of Least Privilege (PoLP).
+- Understand the Attack Surface and the Principle of Least Privilege (PoLP).
 - Perform a basic security audit of active network ports on a Linux server.
-- Configure the Uncomplicated Firewall (UFW) with a Default Deny policy.
-- Implement granular port management to selectively allow SSH and HTTP traffic.
-- Document firewall rules and security best practices using Markdown.
-- Continue expanding my professional GitHub Cloud Computing Portfolio.
+- Configure UFW with a Default Deny policy.
+- Allow SSH and HTTP traffic using specific port rules.
+- Document firewall rules and security best practices in Markdown.
+- Continue expanding my GitHub Cloud Computing Portfolio.
 
 ## Commands Executed
 | Command | Purpose |
 |---|---|
-| `docker run -d -p 8080:80 --name secure-web-app nginx` | Deploy the Nginx web application on port 8080 |
-| `curl http://localhost:8080` | Verify the application is reachable |
-| `sudo ufw allow ssh` | Permanently allow SSH (port 22) before enabling the firewall |
+| `docker run -d -p 8080:80 --name secure-web-app nginx` | Deploy the Nginx web app on port 8080 |
+| `curl http://localhost:8080` | Check that the app responds |
+| `sudo ufw allow ssh` | Allow SSH (port 22) before enabling the firewall |
 | `sudo ufw default deny incoming` | Block all incoming traffic by default |
 | `sudo ufw default allow outgoing` | Allow all outgoing traffic |
-| `sudo ufw enable` | Activate the firewall |
+| `sudo ufw enable` | Turn on the firewall |
 | `sudo ufw status verbose` | Check the firewall status and default policies |
-| `sudo ufw allow 8080/tcp` | Explicitly allow TCP traffic on port 8080 |
+| `sudo ufw allow 8080/tcp` | Allow TCP traffic on port 8080 |
 | `sudo ufw status numbered` | List the firewall rules with numbers |
 
 ## Skills Learned
-Applying the Principle of Least Privilege and Default Deny in practice;
-configuring UFW from the command line; allowing specific services by port
-while blocking everything else; understanding why SSH must be allowed before
-enabling a firewall; and documenting security configurations clearly in
-Markdown.
+I learned how to set up UFW from the command line, apply Default Deny, and
+open only the ports a service needs. I also learned why SSH has to be allowed
+before enabling a firewall, and how to document security settings clearly.
