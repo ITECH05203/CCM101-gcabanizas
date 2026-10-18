@@ -1,7 +1,7 @@
 # Backup Script Guide
 
-This guide documents the automated backup solution so the client's IT team
-can understand, maintain, and reproduce it.
+This guide explains the automated backup I set up so the client's IT team can
+understand it and use it again.
 
 ## The Script (`backup.sh`)
 ```bash
@@ -24,10 +24,10 @@ echo "Backup completed successfully at $TIMESTAMP!"
 ```
 
 ## What `chmod +x` Did
-By default, a newly created text file is not allowed to run as a program, which
-is why `./backup.sh` first returned "Permission denied." The `chmod +x
-backup.sh` command added the execute permission to the file, so Linux now
-allows it to be run as a program.
+Linux doesn't let a new text file run as a program by default, which is why
+`./backup.sh` first showed "Permission denied." Running `chmod +x backup.sh`
+added the execute permission, so Linux now treats the file as a program I can
+run.
 
 ## The Cron Expression
 ```
@@ -36,10 +36,10 @@ allows it to be run as a program.
 
 | Field | Value | Meaning |
 |---|---|---|
-| Minute | `0` | At minute 0 of the hour |
-| Hour | `2` | At 2 AM (24-hour clock) |
+| Minute | `0` | At minute 0 (the start of the hour) |
+| Hour | `2` | At 2 AM |
 | Day of Month | `*` | Every day of the month |
 | Month | `*` | Every month |
 | Day of Week | `*` | Every day of the week |
 
-Together, this runs `/root/backup.sh` every night at exactly 2:00 AM.
+Put together, this runs `/root/backup.sh` every night at exactly 2:00 AM.
