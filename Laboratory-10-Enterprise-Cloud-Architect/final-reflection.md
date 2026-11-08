@@ -1,22 +1,21 @@
 # Final Reflection — Mission 1 to Mission 10
 
+**Name:** Geronvale Joey D. Cabanizas  
 **Course:** CCM101 – Cloud Computing  
 **Project:** CloudNova Technologies
 
 ## My Final Reflection
 
-Throughout our Cloud Computing laboratory activities, I learned a lot of things that were new to me, especially when it came to using Linux, virtual machines, and server configurations. At first, I was still trying to understand how everything worked, but as we continued doing the activities, I slowly became more familiar with the commands and processes.
+During our Cloud Computing laboratory activities from Mission 1 to Mission 10, I gained new knowledge about how cloud systems work and how different technologies are connected. Some activities were difficult for me at first, especially when we started using Linux commands, virtual machines, and server configurations. However, as we continued working on each mission, I became more familiar with the tools and started to understand their purpose.
 
-For our final activity, Mission 10, we created a Nextcloud file-sharing system using Ubuntu Server, Docker, and MariaDB. My assigned tasks were setting up the Ubuntu Server and helping configure the firewall with Diana.
+In Mission 10, our group developed a file-sharing system using Ubuntu Server, Docker, Nextcloud, and MariaDB. One of my contributions was helping with the system architecture diagram, which showed how our physical laptop, virtual machine, containers, network, and storage were connected. Through this task, I understood why planning the system structure is important before implementing it.
 
-One of the challenges I experienced was connecting Ubuntu Server to our Windows laptop. There were times when the connection did not work, so we had to check the IP address, network settings, and SSH connection. It was sometimes confusing, but it helped me understand more about how networking works.
+One challenge we encountered was making sure that all parts of our system could communicate properly. We experienced connection issues and had to check different settings to identify the problem. Although troubleshooting took time, it helped me realize that even a small configuration issue could affect the entire system.
 
-I also learned how to configure UFW to protect our server and allow only the necessary ports. Before this activity, I did not fully understand why firewall rules were important, but after working on our project, I realized that security is a big part of managing a server.
+I also learned the importance of data storage, security, and backups. Seeing Nextcloud work in the browser and knowing that our uploaded files could remain available after restarting the server helped me understand the purpose of persistent storage. I also became more aware of why a server needs proper security settings and automated backups.
 
-What I liked about this activity was that we were able to see the actual result of our work. We could open Nextcloud in the browser, upload files, and check if the data was still there after restarting Ubuntu. Seeing our system work made me appreciate what we had accomplished as a group.
+What I appreciated most about this activity was working with my groupmates. Each of us had different responsibilities, but we needed to communicate and help one another to complete the project. There were moments when we did not know what to do next, but we continued finding solutions together.
 
-This activity also taught me the importance of patience and teamwork. We had different assigned tasks, but we still needed to help each other because everything in the system was connected.
+Overall, these ten missions helped me improve my understanding of cloud computing and gave me actual experience with technologies that I had only heard about before. I still need more practice, especially with Linux commands and server management, but I am glad that I was able to learn something useful from every activity.
 
-Overall, Mission 1 to Mission 10 helped me gain more knowledge and confidence in using cloud computing technologies. I know that I still have a lot to learn, but this experience gave me a better understanding of how servers, applications, security, and automation work together.
-
-I'm happy that we were able to turn what we learned into an actual working project, even though we faced some difficulties along the way.
+Completing Mission 10 was a meaningful experience because we were able to apply what we learned and see the results in a working system. It also taught me that learning technology requires patience, teamwork, and the willingness to solve problems.
